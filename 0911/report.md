@@ -2,11 +2,11 @@
 
 ##	컴퓨터의 언어
 
-  *	기계어(machine language)**: 컴퓨터의 하드웨어가 직접 이해하는 0과 1로 이루어진 이진 코드.
+  *	기계어(machine language)	: 컴퓨터의 하드웨어가 직접 이해하는 0과 1로 이루어진 이진 코드.
   
-  *	어셈블리 언어(assembly language)**: 기계어를 사람이 이해하기 쉽게 만들어진 한단계 위의 언어.
+  *	어셈블리 언어(assembly language)	: 기계어를 사람이 이해하기 쉽게 만들어진 한단계 위의 언어.
   
-  *	고급 언어(high level language)**: Python, Java, C++, JavaScript 등 사람이 이해하기 쉽게 만들어진 언어.
+  *	고급 언어(high level language)	: Python, Java, C++, JavaScript 등 사람이 이해하기 쉽게 만들어진 언어.
 
 ---
 
