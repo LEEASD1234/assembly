@@ -15,16 +15,16 @@
 * 빌드 과정: Assembling → Linking → 실행 (ml, link 명령어 사용).
 
 ## 데이터 정의 (Defining Data)
-*자료형: BYTE, WORD, DWORD, REAL4/8/10 등.
-*초기화:
-**? → 미초기화 (실행 중 값 할당).
-**문자열 → 따옴표 사용, 보통 NULL(0) 종료.
+* 자료형: BYTE, WORD, DWORD, REAL4/8/10 등.
+* 초기화:
+** ? → 미초기화 (실행 중 값 할당).
+** 문자열 → 따옴표 사용, 보통 NULL(0) 종료.
 
-*DUP 연산자: 다중 데이터 할당.
-*엔디안(Endian): x86은 Little-endian 저장 방식.
-*.DATA?: 대용량 미초기화 데이터 선언 시 프로그램 크기 절약.
+* DUP 연산자: 다중 데이터 할당.
+* 엔디안(Endian): x86은 Little-endian 저장 방식.
+* .DATA?: 대용량 미초기화 데이터 선언 시 프로그램 크기 절약.
 
 ## 심볼릭 상수 (Symbolic Constants)
-*= : 이름과 정수 표현식 연결.
-*EQU: 이름과 정수/문자열/텍스트 연결.
-*TEXTEQU: 텍스트 매크로 정의.
+* = : 이름과 정수 표현식 연결.
+* EQU: 이름과 정수/문자열/텍스트 연결.
+* TEXTEQU: 텍스트 매크로 정의.
