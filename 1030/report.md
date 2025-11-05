@@ -1,18 +1,15 @@
 # 프로시저
 
 ## 스택 명령어 및 작동 원리
-* PUSH	: ESP를 감소시키고(Decrement), 소스 피연산자를 ESP가 가리키는 스택 위치로 복사한다.
-* POP : ESP가 가리키는 스택 내용을 목적지로 복사한 후, ESP를 증가시킨다.
+ PUSH	: ESP를 감소시키고(Decrement), 소스 피연산자를 ESP가 가리키는 스택 위치로 복사한다.
+ POP : ESP가 가리키는 스택 내용을 목적지로 복사한 후, ESP를 증가시킨다.
 
 ## 스택의 주요 활용 목적
-* 런타임 스택은 다음 네 가지 주요 목적으로 사용된다.
-** 지역 변수 저장(Local Variable Storage)
-
-** 레지스터 임시 저장(Register Saving) 
-
-** 인자 전달(Argument Passing) 
-
-** 복귀 주소 저장(Return Address Storage): 서브루틴 호출 중 복귀 주소를 저장한다.
+ 런타임 스택은 다음 네 가지 주요 목적으로 사용된다.
+* 지역 변수 저장(Local Variable Storage)
+* 레지스터 임시 저장(Register Saving) 
+* 인자 전달(Argument Passing) 
+* 복귀 주소 저장(Return Address Storage): 서브루틴 호출 중 복귀 주소를 저장한다.
 
 ## 특수 스택 명령어
 * PUSHAD / POPAD : 32비트 범용 레지스터 전체 (EAX, ECX, EDX, EBX, ESP, EBP, ESI, EDI 순서)를 스택에 저장하거나(PUSHAD), 역순으로 복구한다.(POPAD).
