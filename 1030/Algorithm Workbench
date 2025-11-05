@@ -1,0 +1,35 @@
+1.
+
+	PUSH EAX
+	PUSH EBX
+	POP EAX
+	POP EBX
+	
+2.
+	POP EAX
+	ADD EAX, 3
+	PUSH EAX 
+	RET
+	
+
+3.
+	SUB ESP, 8
+	MOV DWORD PTR [ESP+8], 1000h
+	MOV DWORD PTR [ESP+4], 2000h
+
+4.
+	.data
+	array DWORD 10h, 20h, 30h, 40
+	.code
+	MOV ESI, 0  ; ESI = i * 4 = 0 (목적지 인덱스)
+	MOV EDI, 4  ; EDI = (i+1) * 4 = 4
+	MOV EAX, array[EDI] ; EAX = 20h
+	MOV array[ESI], EAX ; Array[0] = 20h
+
+5.
+	SUB ESP,
+	MOV [ESP], 
+	PUSH EAX
+	MOV EAX, [ESP+4]
+	POP EAX
+	RET
