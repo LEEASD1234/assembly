@@ -6,7 +6,7 @@
 
 ## 스택의 주요 활용 목적
 * 런타임 스택은 다음 네 가지 주요 목적으로 사용된다.
-** 지역 변수 저장(Local Variable Storage) 
+** 지역 변수 저장(Local Variable Storage) **
 ** 레지스터 임시 저장(Register Saving) 
 ** 인자 전달(Argument Passing) 
 ** 복귀 주소 저장(Return Address Storage): 서브루틴 호출 중 복귀 주소를 저장한다.
