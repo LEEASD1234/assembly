@@ -1,0 +1,125 @@
+1.
+	push ebp
+	mov  ebp, esp
+	
+2.
+	AddThree PROC STDCALL
+    push ebp
+    mov  ebp, esp
+
+    mov  eax, [ebp+8]
+    add  eax, [ebp+12]
+    add  eax, [ebp+16]
+    ret 12
+	AddThree ENDP
+
+3.
+	LOCAL pArray:DWORD
+
+4.
+	LOCAL buffer[20]:BYTE
+
+5.
+	pwArray WORD PTR ?
+
+6.
+	myByte SBYTE ?
+	
+7.
+	LOCAL myArray[20]:DWORD
+	shr al, 1
+	mov byteArray[2], al
+
+	mov al, byteArray[1]
+	rcr al, 1
+	mov byteArray[1], al
+
+	mov al, byteArray[0]
+	rcr al, 1
+	mov byteArray[0], al 	
+		
+8.
+	SetColor PROC
+    push ebp
+    mov  ebp, esp
+
+    mov  eax, [ebp+12]     ; backcolor
+    shl  eax, 4
+    mov  ebx, [ebp+8]      ; forecolor
+    or   eax, ebx          ; combined color byte
+
+    push eax
+    call SetTextColor
+
+    pop  ebp
+    ret 8
+	SetColor ENDP
+	
+9.
+	WriteColorChar PROC
+    push ebp
+    mov  ebp, esp
+
+    mov  al, [ebp+16]    ; char
+    push [ebp+12]        ; forecolor
+    push [ebp+8]         ; backcolor
+    call SetColor
+
+    mov  dl, al
+    call WriteChar
+
+    pop  ebp
+    ret 12
+	WriteColorChar ENDP
+
+10.
+	DumpMemory PROTO pArray:PTR BYTE, length:DWORD, elementSize:DWORD
+
+	DumpMemory PROC USES esi edi ebx,
+    pArray:PTR BYTE,
+    length:DWORD,
+    elementSize:DWORD
+
+    INVOKE DumpMem, pArray, length, elementSize
+
+    ret
+	DumpMemory ENDP
+
+
+11. 
+	mov eax, val2
+	MultArray PROC USES esi edi ecx,
+    ptrA:PTR DWORD,
+    ptrB:PTR DWORD,
+    count:DWORD
+
+    mov esi, ptrA
+    mov edi, ptrB
+    mov ecx, count
+
+L1:
+    cmp ecx, 0
+    je  L2
+
+    mov eax, [esi]        ; A[i]
+    imul [edi]            ; A[i] * B[i]
+
+    add esi, 4
+    add edi, 4
+    dec ecx
+    jmp L1
+L2:
+    ret
+	MultArray ENDP
+
+
+
+
+
+
+
+
+
+
+
+	
