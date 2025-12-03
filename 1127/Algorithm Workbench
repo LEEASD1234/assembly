@@ -1,0 +1,20 @@
+1.
+	mov eax, [ebx + esi]
+	
+2.
+	mov al, [ebp + esi+20h]
+
+3.
+	Offset = (1 x 4 + 2) x 4 = (4 + 2) x 4 = 6 x 4 = 24
+
+4.
+
+
+
+
+
+
+
+
+
+	

@@ -45,37 +45,3 @@ STDCALL:
 * ADDR 연산자: INVOKE와 함께 사용되며, 변수의 주소를 인자로 전달하는 데 사용됩니다.
 * PROC 지시어: 명명된 인자 목록과 함께 프로시저를 정의하는 데 사용됩니다.
 * 모듈성: PUBLIC, PRIVATE, EXTERN, EXTERNDEF 등의 지시어를 사용하여 프로시저와 변수의 접근성을 제어하고 모듈성을 높일 수 있습니다.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-SP = pop point 
-문자 SI DI
-
-mov = memory to memory 가능 (문자열만)
-
-mov 사용시cld 필요
-null string기본
-
-store  저장
-load 가져오기
-
-trim  공백제거 함수
-sorting 순서대로 나열
-
-sorting 부재시 binary search 불가
-바이너리 섳치 실행

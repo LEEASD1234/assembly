@@ -1,0 +1,74 @@
+1.
+	movzx eax, ax
+	shl eax, 16
+	sar eax, 16
+	
+2.
+	mov bl, al
+	shr al, 1
+	test bl, 01h
+	jz  NO_SET
+	or  al, 80h
+	NO_SET:
+	
+
+3.
+	shl eax, 4
+
+4.
+	shr ebx, 2
+
+5.
+	rol dl, 4
+
+6.
+	shld dx, ax, 1
+	
+7.
+	mov al, byteArray[2]
+	shr al, 1
+	mov byteArray[2], al
+
+	mov al, byteArray[1]
+	rcr al, 1
+	mov byteArray[1], al
+
+	mov al, byteArray[0]
+	rcr al, 1
+	mov byteArray[0], al 	
+		
+8.
+	
+9.
+	mov ax, 5
+	mov bx, 3
+	mul bx
+	mov val1, ax
+	
+10.
+	mov ax, 276
+	mov bl, 10
+	div bl
+	mov val1, ax 	
+
+11. 
+	mov eax, val2
+	mul val3
+
+	mov ebx, val4
+	sub ebx, 3
+
+	div ebx
+
+	mov val1, eax
+
+
+
+
+
+
+
+
+
+
+	
